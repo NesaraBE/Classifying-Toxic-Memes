@@ -224,8 +224,7 @@ Next, we concatenated features obtained from various layers of BERT. For example
 Finally, to visualize a meaningful representation of the training dataset, we concatenated pairwise image and text layers from ResNet50 and BERT, respectively.  tSNE was implemented to reduce the 1768 features pertaining to the 8500 training samples to a 2-dimensional embedding (Fig. 3).  Subsequently, KMeans clustering (n = 2) was performed on the embedding to attempt partitioning of the samples into Not Hateful (0) or Hateful (1) categories.  Fig. 3 illustrates various examples of feature concatenation from early or late BERT and ResNet50 features.  Upon closer examination and combined with the results above, we see that unsupervised learning has performed poorly. This is expected as we have not optimized any parameters for the Hateful Memes dataset. This forms our motivation to do supervised learning with the fused features.
 
 <p align="center">
-    <img align="center" src= './unsupv.png')
- />
+    <img align="center" src= './unsupv.png'/>
 </p>
 <p align="center">
     <em> Figure 3. Examples of (A) early-early, (B) early-late, (C) late-early, and (D) late-late fusion clustering from a 2D tSNE embedding followed by KMeans = 2 clustering. Clustering evaluation is high from Fowlkes-Mallows but not Rand due to the large number of predicted positives, resulting in many true positives but also false positives.  
@@ -368,6 +367,8 @@ To conclude our experimentation, we attempted a bagging experiment with CLIP. Bu
 <p align="center">
     <em> Figure 11.  CLIP embedding of best performing model with 0.7748 AUROC. </em>
 </p>
+
+<br>
 
 With this we see the best AUROC score of 0.7748 and our score is within top 20 in the hateful memes challenge.
 
