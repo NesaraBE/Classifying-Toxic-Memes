@@ -350,7 +350,7 @@ Until now, features extracted from pre-trained ResNet50 & BERT are used. To exam
         <td>0.2</td>
     </tr>
 </table>
-<em><b> Table 6.  Classification results from CLIP without fine-tuning. </em>
+<em><b> Table 6.</b> Classification results from CLIP without fine-tuning. </em>
 </p>
 
 From these results, it is clear that even state-of-the art zero-shot learners cannot be directly applied to all applications they were not trained on. Next, we discuss the results of using CLIP embeddings in our supervised learning model.
