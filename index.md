@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In recent years, memes have grown into one of the most widespread forms of content on social media. While generally intended for humor, hateful and misleading content has been on the rise across all major social media platforms (**Fig. 1**).  To ensure a healthy atmosphere online, an effective method of classifying memes into toxic or non-toxic is a major issue to be tackled.
+In recent years, memes have grown into one of the most widespread forms of content on social media. While generally intended for humor, hateful and misleading content has been on the rise across all major social media platforms (**Fig. 1**).  To ensure a healthy atmosphere online, an effective method of classifying memes into toxic or non-toxic is a major issue to be tackled. 
 
 We intend to build a meme classifier that can assist human moderators in filtering out the toxic memes posted to social media sites. The dataset used for the project includes the data from Meta’s Hateful Memes Challenge [3].
 
