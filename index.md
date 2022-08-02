@@ -115,7 +115,6 @@ We take features obtained from early and later stage layers from ResNET-50 and e
 </p>
 
 Next, we fuse features from various layers. The fusion techniques employed also improve the results obtained individually just from image or text data. We report the best homogeneity result in Table 2. 
-<center>
 
 <p align = 'center'>
 <table class="center">
