@@ -328,10 +328,12 @@ Until now, features extracted from pre-trained ResNet50 & BERT are used. To exam
 
 <p align = 'center'>
 <table>
-    <tr>
-        <td>Internal Image Encoder</td>
         <td>Text-Only Accuracy (%)</td>
         <td>Text-Only AUROC</td>
+</table>
+<table>
+    <tr>
+        <td>Internal Image Encoder</td>
         <td>Image-Only Accuracy</td>
         <td>Image-Only AUROC</td>
     </tr>
