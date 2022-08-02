@@ -136,7 +136,6 @@ Next, we fuse features from various layers. The fusion techniques employed also 
 </tr>
 
 </table>
-</center>
     <em><b>Table 2.</b> Homogeneity results for clustering fused features from BERT and ResNet50.</em>
 </p>
 
