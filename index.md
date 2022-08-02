@@ -7,7 +7,7 @@ In recent years, memes have grown into one of the most widespread forms of conte
 We intend to build a meme classifier that can assist human moderators in filtering out the toxic memes posted to social media sites. The dataset used for the project includes the data from Meta’s Hateful Memes Challenge [3].
 
 <p align="center">
-    <img align="center" src="/meme_extreme.png" />
+    <img align="center" src="./meme_extreme.png" />
 </p>
 <p align="center">
     <em> Figure 1. When memes go extreme. Example taken from [4]</em>
@@ -47,7 +47,7 @@ We have 6 possible fusion combinations in our case:
 Our neural network was composed of multiple dense layers, with skip connections like those used in ResNet to allow for faster training and to reduce overfitting. Next, we employ a technique similar to bagging where we randomly choose, with replacement, the output of a few layers of text and images and train a neural network. We do the random sampling 10 times and obtain the outputs. Instead of a strict majority vote, we take an average of the sigmoid outputs obtained and make a decision based on that. For the first fusion model where we use outputs from ResNet50 and BERT, we choose 3 layers of text embeddings and the last image layer. In the second fusion model, we choose output of 3 different layers from the CLIP text encoder and the last output of the CLIP image encoder. Table 6 shows the results of various feature extractions from the different pre-trained models and fusion techniques.
 
 <p align="center">
-    <img align="center" src="/skip_mdl.png" />
+    <img align="center" src="./skip_mdl.png" />
 </p>
 <p align="center">
     <em> Figure 2.  Neural networking with dense layers employing skip connections to reduce training time and overfitting while mitigating the vanishing gradient problem. </em>
@@ -224,7 +224,7 @@ Next, we concatenated features obtained from various layers of BERT. For example
 Finally, to visualize a meaningful representation of the training dataset, we concatenated pairwise image and text layers from ResNet50 and BERT, respectively.  tSNE was implemented to reduce the 1768 features pertaining to the 8500 training samples to a 2-dimensional embedding (Fig. 3).  Subsequently, KMeans clustering (n = 2) was performed on the embedding to attempt partitioning of the samples into Not Hateful (0) or Hateful (1) categories.  Fig. 3 illustrates various examples of feature concatenation from early or late BERT and ResNet50 features.  Upon closer examination and combined with the results above, we see that unsupervised learning has performed poorly. This is expected as we have not optimized any parameters for the Hateful Memes dataset. This forms our motivation to do supervised learning with the fused features.
 
 <p align="center">
-    <img align="center" src= 'unsupv.png')
+    <img align="center" src= './unsupv.png')
  />
 </p>
 <p align="center">
