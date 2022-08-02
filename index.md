@@ -304,7 +304,7 @@ With this updated model, higher training time and slight overfitting is observed
         <td>0.5633</td>
     </tr>
 </table>
-<em><b>Table 5.  Performance metrics for fused CLIP-based models.</em>
+<em><b>Table 5.</b>  Performance metrics for fused CLIP-based models.</em>
 </p>
     
     
