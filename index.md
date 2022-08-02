@@ -384,12 +384,14 @@ By performing bagging experiments, we observed that results improve much less wh
 Employing convolution layers for image features and recurrent layers for text would be our focus for the future. We would also aim at a multiclass classification of a meme’s toxicity with multiple labels (discrimination, violence, mature etc).
 
 ## References
-
-1. Pramanick, S., et al. "MOMENTA: A Multimodal Framework for Detecting Harmful Memes and Their Targets." arXiv preprint arXiv:2109.05184 (2021).
-2. Dimitrov, D., et al. "Detecting propaganda techniques in memes." arXiv preprint arXiv:2109.08013 (2021).
-3. Kiela, D., et al. "The hateful memes challenge: Detecting hate speech in multimodal memes." Advances in Neural Information Processing Systems 33 (2020): 2611-2624.
-4. Sharma, S., et al. "Detecting and Understanding Harmful Memes: A Survey." arXiv preprint arXiv:2205.04274 (2022).
-5. Devlin, J., et. al. “BERT: Pre-Training of Deep Bidirectional Transformers for Language Understanding.” arXiv, May 24, 2019. 
-6. He, K., et. al.. “Deep Residual Learning for Image Recognition.” arXiv, December 10, 2015. 
-7. Radford, A., et al. “Learning Transferable Visual Models From Natural Language Supervision.” arXiv, February 26, 2021.
-8. Mogadala, A. et al. "Trends in integration of vision and language research: A survey of tasks, datasets, and methods." Journal of Artificial Intelligence Research 71 (2021): 1183-1317.
+<p align = 'left'>
+1. Pramanick, S., et al. "MOMENTA: A Multimodal Framework for Detecting Harmful Memes and Their Targets." arXiv preprint arXiv:2109.05184 (2021). <br>
+2. Dimitrov, D., et al. "Detecting propaganda techniques in memes." arXiv preprint arXiv:2109.08013 (2021). <br>
+3. Kiela, D., et al. "The hateful memes challenge: Detecting hate speech in multimodal memes." Advances in Neural Information Processing Systems 33 (2020): 2611-2624. <br>
+4. Sharma, S., et al. "Detecting and Understanding Harmful Memes: A Survey." arXiv preprint arXiv:2205.04274 (2022). <br>
+5. Devlin, J., et. al. “BERT: Pre-Training of Deep Bidirectional Transformers for Language Understanding.” arXiv, May 24, 2019.  <br>
+6. He, K., et. al.. “Deep Residual Learning for Image Recognition.” arXiv, December 10, 2015. <br>
+7. Radford, A., et al. “Learning Transferable Visual Models From Natural Language Supervision.” arXiv, February 26, 2021. <br>
+8. Mogadala, A. et al. "Trends in integration of vision and language research: A survey of tasks, datasets, and methods." Journal of Artificial Intelligence Research 71 (2021): 1183-1317. <br>
+    
+</p>
