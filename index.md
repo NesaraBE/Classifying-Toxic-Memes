@@ -238,14 +238,14 @@ Finally, to visualize a meaningful representation of the training dataset, we co
 Since the features are extracted from pre-trained models, we directly use a Fully connected model for our use case. Our initial model has 6 Fully Connected layers and all leaky ReLU activations, except for the last activation which is a sigmoid (Fig. 4). 
 
 <p align="center">
-    <img align="center" src="/init_model_arch.png" />
+    <img align="center" src="./init_model_arch.png" />
     </p>
 <p align="center">
     <em> Figure 4. Initial neural network model architecture with 6 fully connected layers and leaky ReLU activations except for the last sigmoid activation. </em>
 </p>
 
 <p align="center">
-    <img align="center" src="/loss_init.png" />
+    <img align="center" src="./loss_init.png" />
 </p>
 <p align="center">
     <em> Figure 5.  Overfitting in our initial model with cross entropy loss. However, the maximum AUROC score obtained 0.706. </em>
@@ -254,14 +254,14 @@ Since the features are extracted from pre-trained models, we directly use a Full
 Fig. 5 demonstrates overfitting in all the fused features. Next, dropout is used as a means of regularization to avoid this. The updated model is seen in Fig. 6.
 
 <p align="center">
-    <img align="center" src="/drpt_arch.png" />
+    <img align="center" src="./drpt_arch.png" />
 </p>
 <p align="center">
     <em> Figure 6. Neural network model architecture with dropout layers. In our case, dropout layers act as a means of regularization. The value of drop is our hyperparameter which is tuned to 0.5 upon doing cross validation. </em>
 </p>
 
 <p align="center">
-    <img align="center" src="/loss_drpt.png" />
+    <img align="center" src="./loss_drpt.png" />
     </p>
 <p align="center">
     <em> Figure 7.  Slight overfitting still exists in our model with cross entropy loss. We can see an increase in the max AUROC score which is 0.7174. </em>
@@ -270,7 +270,7 @@ Fig. 5 demonstrates overfitting in all the fused features. Next, dropout is used
 With this updated model, higher training time and slight overfitting is observed (Fig. 7). To overcome this, we use skip connection based models (Fig. 8) as described in the Methods section. Along with faster learning, this alleviates the problem of vanishing gradients.
 
 <p align="center">
-    <img align="center" src="/skip_mdl_arch.png" />
+    <img align="center" src="./skip_mdl_arch.png" />
     </p>
 <p align="center">
     <em> Figure 8. Neural network model architecture with skip layer connections. </em>
@@ -308,7 +308,7 @@ With this updated model, higher training time and slight overfitting is observed
     
     
 <p align="center">
-    <img align="center" src="/loss_skip.png" />
+    <img align="center" src="./loss_skip.png" />
     </p>
 <p align="center">
     <em> Figure 9.  The model reaches good accuracy before overfitting. We can see an increase in the max AUROC score to 0.7460. </em>
@@ -317,7 +317,7 @@ With this updated model, higher training time and slight overfitting is observed
 Next, we tried out a bagging-based method as described in the Methods section. We saw a slight increase in accuracy as bagging relies on majority vote. A slight increase indicates that the features represent nearly the same amount of information for classification.  This gives max AUROC accuracy of 0.7624. For visualization, tSNE plots are obtained as shown (Figs 10, 11).
 
 <p align="center">
-    <img align="center" src="/tSNE_bag.png" />
+    <img align="center" src="./tSNE_bag.png" />
     </p>
 <p align="center">
     <em> Figure 10.  tSNE embedding of strong performing model with 0.7624 AUROC. </em>
@@ -363,7 +363,7 @@ Finally, extracted features from the state of the art pretrained CLIP model are 
 To conclude our experimentation, we attempted a bagging experiment with CLIP. But a slight decrease in the AUROC accuracy down to 0.7638 is observed. This is because the models were trained with unimportant fused features obtained from initial layers that corrupted the prediction.  This is verified by giving individual layer outputs of text as input, a decrease in accuracy for all but the last layer is observed. 
 
 <p align="center">
-    <img align="center" src="/tSNE_bag_CLIP.png" />
+    <img align="center" src="./tSNE_bag_CLIP.png" />
     </p>
 <p align="center">
     <em> Figure 11.  CLIP embedding of best performing model with 0.7748 AUROC. </em>
