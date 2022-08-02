@@ -138,7 +138,7 @@ Next, we fuse features from various layers. The fusion techniques employed also 
 
 </table>
 </center>
-    <em><b>Table 2.</b>  Table 2.  Homogeneity results for clustering fused features from BERT and ResNet50.</em>
+    <em><b>Table 2.</b> Homogeneity results for clustering fused features from BERT and ResNet50.</em>
 </p>
 
 Further, we try various fusion techniques as described in the methods section above. As expected from the homogeneity scores, concatenating results from the FC layer of ResNET and the 11th layer of BERT gives the best results. We hypothesize the Late-Late fusion technique gives the best results because the later stage features are much more abstract. Conventional algorithms like GMM tend to perform poorly on complex and less abstract features. The results are compiled in Table 3.
