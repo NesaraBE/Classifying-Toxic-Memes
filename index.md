@@ -328,8 +328,14 @@ Until now, features extracted from pre-trained ResNet50 & BERT are used. To exam
 
 <p align = 'center'>
 <table>
+    <tr>
         <td>Text-Only Accuracy (%)</td>
         <td>Text-Only AUROC</td>
+    </tr>
+    <tr>
+        <td>50.3</td>
+        <td>0.49</td>
+    </tr>    
 </table>
 <table>
     <tr>
@@ -339,15 +345,11 @@ Until now, features extracted from pre-trained ResNet50 & BERT are used. To exam
     </tr>
     <tr>
         <td>Modified ResNet-50</td>
-        <td>50.3</td>
-        <td>0.49</td>
         <td>51.1</td>
         <td>0.29</td>
     </tr>
     <tr>
         <td>Custom Vision Transformer</td>
-        <td>50.7</td>
-        <td>0.41</td>
         <td>51.6</td>
         <td>0.2</td>
     </tr>
