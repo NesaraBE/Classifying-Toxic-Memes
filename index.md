@@ -117,6 +117,7 @@ We take features obtained from early and later stage layers from ResNET-50 and e
 Next, we fuse features from various layers. The fusion techniques employed also improve the results obtained individually just from image or text data. We report the best homogeneity result in Table 2. 
 
 <p align = 'center'>
+<center>
 <table class="center">
 <tr>
 
@@ -136,6 +137,7 @@ Next, we fuse features from various layers. The fusion techniques employed also 
 
 </table>
     <em><b>Table 2.</b> Homogeneity results for clustering fused features from BERT and ResNet50.</em>
+</center>
 </p>
 
 Further, we try various fusion techniques as described in the methods section above. As expected from the homogeneity scores, concatenating results from the FC layer of ResNET and the 11th layer of BERT gives the best results. We hypothesize the Late-Late fusion technique gives the best results because the later stage features are much more abstract. Conventional algorithms like GMM tend to perform poorly on complex and less abstract features. The results are compiled in Table 3.
@@ -168,8 +170,8 @@ Further, we try various fusion techniques as described in the methods section ab
 </tr>
 
 </table>
-</center>    
 <em><b>Table 3.</b>  Homogeneity results for clustering early and late stage features from fused feature layers.</em>
+</center>    
 </p>
     
 
@@ -214,9 +216,8 @@ Next, we concatenated features obtained from various layers of BERT. For example
 </tr>
 
 </table>
-</center>
 <em><b>Table 4.</b>  Homogeneity results for clustering concatenated features from BERT layers applied to captions.</em>
-
+</center>
 </p>
 
 Finally, to visualize a meaningful representation of the training dataset, we concatenated pairwise image and text layers from ResNet50 and BERT, respectively.  tSNE was implemented to reduce the 1768 features pertaining to the 8500 training samples to a 2-dimensional embedding (Fig. 3).  Subsequently, KMeans clustering (n = 2) was performed on the embedding to attempt partitioning of the samples into Not Hateful (0) or Hateful (1) categories.  Fig. 3 illustrates various examples of feature concatenation from early or late BERT and ResNet50 features.  Upon closer examination and combined with the results above, we see that unsupervised learning has performed poorly. This is expected as we have not optimized any parameters for the Hateful Memes dataset. This forms our motivation to do supervised learning with the fused features.
@@ -274,6 +275,7 @@ With this updated model, higher training time and slight overfitting is observed
 </p>
 
 <p align = 'center'>
+<center>
 <table>
     <tr>
         <td>Metric\Model</td>
@@ -301,6 +303,7 @@ With this updated model, higher training time and slight overfitting is observed
     </tr>
 </table>
 <em><b>Table 5.</b>  Performance metrics for fused CLIP-based models.</em>
+</center>
 </p>
     
     
@@ -323,6 +326,7 @@ Next, we tried out a bagging-based method as described in the Methods section. W
 Until now, features extracted from pre-trained ResNet50 & BERT are used. To examine the adaptability of zero-shot multimodal learners to the Hateful Memes dataset and to provide a baseline metrics for classification we modified CLIP model to classify memes in the challenge. The baseline metrics were obtained by classifying the memes using the image only (with embedded text), and using text only. The results are shown in Table 6.
 
 <p align = 'center'>
+<center>
 <table>
     <tr>
         <td>Text-Only Accuracy (%)</td>
@@ -351,6 +355,7 @@ Until now, features extracted from pre-trained ResNet50 & BERT are used. To exam
     </tr>
 </table>
 <em><b> Table 6.</b> Classification results from CLIP without fine-tuning. </em>
+</center>
 </p>
 
 From these results, it is clear that even state-of-the art zero-shot learners cannot be directly applied to all applications they were not trained on. Next, we discuss the results of using CLIP embeddings in our supervised learning model.
